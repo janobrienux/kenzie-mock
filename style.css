@@ -14,6 +14,7 @@ body {
 }
 
 .design-section h1 {
+  margin-top: 14%;
   font-size: 150%;
   line-height: 0;
 }
@@ -25,21 +26,37 @@ body {
   font-size: 110%;
 }
 
-nav li {
-  display: inline-block;
-  margin-left: 1em;
-  text-decoration: underline;
-  color: #5933e4;
-  font-size: smaller;
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-nav .tour-button {
-  background-color: #5933e4;
-  color: white;
-  padding: 0.5em;
-  border-radius: 6px;
-  width: 8em;
-  border: none;
+nav li {
+  list-style: none;
+  padding: 10px;
+}
+
+nav .hamburger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 10%;
+}
+
+.line {
+  background: purple;
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+}
+
+img {
+  width: 60px;
 }
 
 .signup-form {
@@ -54,5 +71,89 @@ nav .tour-button {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.start-dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.compare-programs, .about-kenzie {
+  text-align: center;
+}
+
+.teams {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  padding-top: 10%;
+  -ms-grid-columns: 150px 150px;
+      grid-template-columns: 150px 150px;
+}
+
+.icon-wrapper {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+  -ms-grid-columns: 20px 20px 10px;
+      grid-template-columns: 20px 20px 10px;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 5;
+      grid-template-areas: "a b ."  "c d e";
+}
+
+.icon_1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  position: relative;
+  left: 10px;
+}
+
+.icon_2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+  position: relative;
+  left: 10px;
+}
+
+.icon_3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: c;
+}
+
+.icon_4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: d;
+}
+
+.icon_5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: e;
+}
+
+.fas {
+  color: lightgrey;
+}
+
+h4 {
+  color: darkslategrey;
+  font-family: sans-serif;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=style.css.map */
