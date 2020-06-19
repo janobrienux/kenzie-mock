@@ -1,69 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
-  }
+}
   .design-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    margin: 5%;
     h1 {
-      margin-top: 14%;
-        font-size: 150%;
-        line-height: 0; 
-      }
-      h2 {
-        text-align: center;
-        color: darkslategrey;
-        font-weight: 100;
-        font-size: 110%;
-      }
-  }
-  nav {
-    ul { 
-    display: flex;
-    flex-direction: column;
-    
+      text-align: center;
+      font-size: 24px;
+      margin: 4%;
     }
-    li {
+    h5 {
+      text-align: center;
+      font-size: 16px;
+      margin: 4%;
+      font-weight: lighter;
+    }
+    img {
+      width: 100%
+    }
+  }
+   .navlinks {
+     display: flex;
+     flex-direction: row;
+     font-size: small;
+     justify-content: flex-end;
+     color: #6633ff;
+   }
+   li {
      list-style: none;
-     padding: 10px;
-    }
-    .hamburger {
-      position: absolute;
-      cursor: pointer;
-      right: 5%;
-      top: 10%;
+     .tour-button {
+       background-color: #6633ff;
+       color: white;
+       border-radius: 4px 4px ;
+       padding: 4%;
+       margin-right: 5%;
+     }
+     a {
+     margin: 5px;
+   }
+   
+ }
+ .press-reviews {
+   display: flex;
+   flex-direction: column;
+   .press-1 {
+     display: flex;
+     flex-direction: row;
+     margin: 10%;
+     }
+   }
+   .press-2 {
+     display: flex;
+     flex-direction: row;
+     margin: 10%;
+   }
+   img {
+     height: 10%;
+     width: 30%;
+   }
+ 
+ .start-dates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+   img {
+     width: 40%;
+   }
+   button {
+     border-radius: 3px 3px 3px 3px;
+     padding: 4px;
+     color: #cc99ff;
+     background-color: white;
+     border-color: #cc99ff;
+   }
+ }
+ .compare-programs {
+   margin-bottom: 10%;
+   margin-top: 10%;
+   background-color:rgb(239, 242, 245);
+   button {
+     color: white;
+     background-color: #6633ff;
+     border-radius: 6px;
+     padding: 4px;
+     margin: 5%;
+     
+   }
+ }
 
-    }
 
-  }
-  .line {
-    background: purple;
-    width: 30px;
-    height: 3px;
-    margin: 5px;
-  }
 
-  // nav {
-  
-  //   li {
-  //     display: inline-block;
-  //   margin-left: 1em;
-  //   text-decoration: underline;
-  //   color: rgb(89, 51, 228);
-  //   font-size: smaller;
-  //   }
-  //   .tour-button {
-  //     background-color: rgb(89, 51, 228);
-  //   color: white;
-  //   padding: 0.5em;
-  //   border-radius: 6px;
-  //   width: 8em;
-  //   border: none;
-  //   }
-  // }
-  img {
-    width: 60px;
-  }
 
   .signup-form {
     display: flex;
@@ -71,12 +105,7 @@ body {
     align-items: center;
     text-align: center;
   }
-  .start-dates {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+
   .compare-programs, .about-kenzie {
     text-align: center;
   }
@@ -85,50 +114,65 @@ body {
     display: grid;
     justify-items: center;
     padding-top: 10%;
-    grid-template-columns: 150px 150px  ;
+    grid-template-columns: 1fr 1fr   ;
   }
-
-  .icon-wrapper {
-   display: inline-grid;
-  grid-template-rows: 2;
-  grid-template-columns: 20px 20px 10px;
-  grid-row-start: 2;
-  grid-row-end: 5;
-  grid-template-areas:
-  "a b ." 
-  "c d e"
-  }
- .icon_1 {
-   grid-area: a;
-   position: relative;
-   left: 10px;
-
- }
- .icon_2 {
-   grid-area: b;
-   position: relative;
-   left: 10px;
-   
-}
-.icon_3 {
-   grid-area: c;
-}
-.icon_4 {
-  grid-area: d;
-   
-}
-.icon_5 {
-  grid-area: e;
-   
-}
-.fas {
-  color: lightgrey;
-}
 h4 {
   color: darkslategrey;
   font-family: sans-serif;
   font-weight: bolder;
+  text-align: center;
 }
+.student-info {
+  padding: 10%;
+}
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10%;
+}
+.icon-wrapper {
+  img {
+    width: 100%;
+  }
+}
+.chat {
+    padding: 5%;
+  }
+  .form-info {
+  }
+.tour-button, .signup-form form input[type=submit] {
+    border-radius: 3px 3px 3px 3px;
+     padding: 4px;
+     color: #cc99ff;
+     background-color: white;
+     border-color: #cc99ff;
+  
+} 
+@media (min-width:550px) {
+  .start-dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .teams {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+ .press-reviews {
+   display: flex;
+   flex-direction: row;
+   img {
+     height: 80%;
+     width: 40%;
+   }
+ }
+}
+
+
+
    
    
 
