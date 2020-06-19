@@ -1,3 +1,10 @@
+// variables// 
+$secondarybtn: #cc99ff;
+$secondary_background: white;
+$primary_background: #6633ff;
+$standard_margin: 10px;
+$text_margin: 4px;
+
 * {
   margin: 0;
   padding: 0;
@@ -14,12 +21,12 @@ body {
     h1 {
       text-align: center;
       font-size: 24px;
-      margin: 4%;
+      margin: $text_margin;
     }
     h5 {
       text-align: center;
       font-size: 16px;
-      margin: 4%;
+      margin: $text_margin;
       font-weight: lighter;
     }
     img {
@@ -37,7 +44,7 @@ body {
      list-style: none;
      .tour-button {
        background-color: #6633ff;
-       color: white;
+       color: $secondary_background;
        border-radius: 4px 4px ;
        padding: 4%;
        margin-right: 5%;
@@ -53,13 +60,13 @@ body {
    .press-1 {
      display: flex;
      flex-direction: row;
-     margin: 10%;
+     margin: $standard_margin;
      }
    }
    .press-2 {
      display: flex;
      flex-direction: row;
-     margin: 10%;
+     margin: $standard_margin;
    }
    img {
      height: 10%;
@@ -77,21 +84,21 @@ body {
    button {
      border-radius: 3px 3px 3px 3px;
      padding: 4px;
-     color: #cc99ff;
-     background-color: white;
-     border-color: #cc99ff;
+     color: $secondarybtn;
+     background-color:$secondary_background;
+     border-color: $secondarybtn;
    }
  }
  .compare-programs {
-   margin-bottom: 10%;
-   margin-top: 10%;
+   margin-bottom: $standard_margin;
+   margin-top: $standard_margin;
    background-color:rgb(239, 242, 245);
    button {
-     color: white;
-     background-color: #6633ff;
+     color: $secondary_background;
+     background-color: $primary_background;
      border-radius: 6px;
      padding: 4px;
-     margin: 5%;
+     margin: $text_margin;
      
    }
  }
@@ -140,14 +147,13 @@ h4 {
 .chat {
     padding: 5%;
   }
-  .form-info {
-  }
+
 .tour-button, .signup-form form input[type=submit] {
     border-radius: 3px 3px 3px 3px;
      padding: 4px;
-     color: #cc99ff;
-     background-color: white;
-     border-color: #cc99ff;
+     color: $secondarybtn;
+     background-color: $secondary_background;
+     border-color: $secondarybtn;
   
 } 
 @media (min-width:550px) {
